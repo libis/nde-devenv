@@ -3,8 +3,8 @@ const path = require('path');
 const archiver = require('archiver');
 const Config = require('./package.json');
 const distPath = path.join(__dirname, 'dist', 'custom-module');
-const targetPath = path.join(__dirname, 'dist', `${Config.build.institution}-${Config.build.view}`);
-const zipPath = path.join(__dirname, 'dist', `${Config.build.institution}-${Config.build.view}.zip`);
+const targetPath = path.join(__dirname, 'dist', `${Config.nde.build.institution}-${Config.nde.build.view}`);
+const zipPath = path.join(__dirname, 'dist', `${Config.nde.build.institution}-${Config.nde.build.view}.zip`);
 
 function removeDirectory(directory, callback) {
     fs.rm(directory, { recursive: true, force: true }, callback);

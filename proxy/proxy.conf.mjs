@@ -22,7 +22,7 @@ const proxyRules = [
     context: [
       '**', '!/nde/custom/**'
     ],
-    target: Config.proxy.target,
+    target: Config.nde.proxy.target,
     secure: true,
     changeOrigin: true,
     logLevel: 'debug',
