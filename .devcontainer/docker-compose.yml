@@ -9,7 +9,7 @@ services:
     
     volumes:
     - ../.devcontainer:/app/.devcontainer
-    - ../src:/app/src/app/libis
+    - ../:/app
     - docker-data:/var/lib/docker
 
 volumes:

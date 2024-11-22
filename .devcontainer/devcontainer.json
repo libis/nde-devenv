@@ -20,5 +20,6 @@
           ]
         }
       },
-      "features": {}
+      "features": {},
+      "postCreateCommand": "/app/.devcontainer/setup.sh"
 }
