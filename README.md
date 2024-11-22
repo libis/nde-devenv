@@ -8,16 +8,16 @@ The NDE Customization package is currently available exclusively to Primo custom
 
 ---
 
-### Development Containers (devcontainers)[https://containers.dev/]
-Life will become easier if you are using an IDE that supports devcontainers and you have (Docker)[https://docker.com] running.  
-This can be remote like GitHub Codespaces or local like Visual Studio Code(VSC) or any IDE that support devcontainers.
+### Development Containers [devcontainers](https://containers.dev/)
+Life will become easier if you are using an IDE that supports devcontainers and you have [Docker](https://docker.com) running.  
+This can be remote like [GitHub Codespaces](https://github.com/features/codespaces) or local like [Visual Studio Code](https://code.visualstudio.com/)(VSC) or any IDE that support devcontainers.
 
 You can 'Reopen in Container' when you open this repository in for example VSC. Your IDE will create a docker image and start the container, be patient this can take a while if you do this the first time.
 
 Once your container is running you will see your workspace(/app/src) on the left. We have hidden the project files(tsconfig.json, ...) but if you need them use your terminal or update the workspaceFolder in ```.devcontainer/devcontainer.json``` and rebuild(press cmd/ctrl+shift+p or F1 and select 'Dev Containers: Rebuild Container')
 
 ### Configuration
-All direct relavant configurations are located in ```package.json```
+All direct relevant configurations are located in ```package.json```
 
 ```json
   "nde": {
@@ -40,8 +40,8 @@ All direct relavant configurations are located in ```package.json```
 ```bash
   npm run start:proxy
 ```
-
-```HTTP
+Accessing Primo NDE through the proxy
+```url
   http://localhost:4201/nde/home?vid=32KUL_KUL:KULeuven_NDE&lang=en
 ```
 
