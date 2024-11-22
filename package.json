@@ -1,0 +1,66 @@
+{
+  "name": "custom-module",
+  "version": "1.0.1",
+  "proxy": {
+    "target": "https://libis-kul-psb.primo.exlibrisgroup.com/"
+  },
+  "build": {
+    "institution": "32KUL_KUL",
+    "view": "KULeuven_NDE"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "start:proxy": "ng serve --proxy-config ./proxy/proxy.conf.mjs",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "postbuild": "node postbuild.js",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular-architects/module-federation": "^16.0.4",
+    "@angular/animations": "^16.2.0",
+    "@angular/cdk": "16.1.3",
+    "@angular/common": "^16.2.0",
+    "@angular/compiler": "^16.2.0",
+    "@angular/core": "^16.2.0",
+    "@angular/forms": "^16.2.0",
+    "@angular/material": "16.1.3",
+    "@angular/material-moment-adapter": "16.1.3",
+    "@angular/platform-browser": "^16.2.0",
+    "@angular/platform-browser-dynamic": "^16.2.0",
+    "@angular/router": "^16.2.0",
+    "@ngrx/entity": "^16.1.0",
+    "@ngrx/store": "^16.1.0",
+    "@ngrx/store-devtools": "^16.1.0",
+    "@ngx-translate/core": "^14.0.0",
+    "@ngx-translate/http-loader": "^7.0.0",
+    "@webcomponents/custom-elements": "^1.6.0",
+    "archiver": "^7.0.1",
+    "dotenv": "^16.4.5",
+    "moment": "2.30.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.13.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.6",
+    "@angular/cli": "^16.2.6",
+    "@angular/compiler-cli": "^16.2.0",
+    "@types/jasmine": "~4.3.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "ngx-build-plus": "^16.0.0",
+    "typescript": "~5.1.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}

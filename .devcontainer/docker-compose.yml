@@ -1,0 +1,16 @@
+services:
+  nde-devenv:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    privileged: true  
+    command: sleep infinity    
+    
+    volumes:
+    - ../.devcontainer:/app/.devcontainer
+    - ../src:/app/src/app/libis
+    - docker-data:/var/lib/docker
+
+volumes:
+  docker-data:

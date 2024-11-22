@@ -1,0 +1,24 @@
+{
+    "name": "NDE development environment",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "nde-devenv",
+    "workspaceFolder": "/app/src",
+    "forwardPorts": [4201],
+    "customizations": {
+        "vscode": {
+          "extensions": [
+            "esbenp.prettier-vscode",
+            "redhat.vscode-yaml",
+            "me-dutour-mathieu.vscode-github-actions",
+            "eamodio.gitlens",
+            "YoavBls.pretty-ts-errors",
+            "Angular.ng-template",
+            "johnpapa.Angular2",
+            "aaravb.chrome-extension-developer-tools",
+            "ms-vscode-remote.remote-ssh",
+            "ms-azuretools.vscode-docker"
+          ]
+        }
+      },
+      "features": {}
+}
