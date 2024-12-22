@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Primo NDE</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-content responsive-wrapper">
+    <div class="header-logo">
+      <a href="/">
+        <span>Primo NDE Dashboard</span>
+      </a>
+    </div>
+    <div class="header-navigation">
+    </div>
+  </div>
+</header>
+<main class="main">
+  <div class="responsive-wrapper">
+    <div class="main-header">
+      <h1>Settings</h1>
+    </div>
+    <div class="content">
+      <div class="content-main">
+        <div>            
+            <form action="/submit" method="POST">
+                <label for="proxy_target">Primo URL:</label>
+                <input type="text" id="proxy_target" name="proxy_target" required value="{{proxy_target}}">
+                <br><br>
+                <label for="institution_code">Institution Code:</label>
+                <input type="text" id="institution_code" name="institution_code" required value="{{institution_code}}">
+                <br><br>
+                <label for="view_code">View Code:</label>
+                <input type="text" id="view_code" name="view_code" required value="{{view_code}}">
+                <br><br>            
+                <button class="button" type="submit">Submit</button>
+            </form>        
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

@@ -81,6 +81,10 @@ Your package will be located in ```dist/YOUR_PACKAGE_NAME.zip```
 - **Customize Primo NDE UI**: Watch our live demo on YouTube for a visual guide on how to customize the Primo NDE UI:
   [Customize Primo NDE UI: Live Demo](https://www.youtube.com/watch?v=z06l2hJYuLc)
 
+## Query parameter flags
+- disable customizations: noCustomization=true
+- force the use of the custom package. customClientUrl = 'http://localhost:4201': useLocalCustomPackage=true
+
 
 
 ---
